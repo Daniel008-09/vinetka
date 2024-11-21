@@ -1,0 +1,315 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ 
+ .img{
+    transform: rotate(90deg);
+    height: 200px;
+    margin-top: 60px;
+
+}
+
+.button {
+  background-color: #fff;
+  border: 1px solid #d5d9d9;
+  border-radius: 8px;
+  box-shadow: rgba(213, 217, 217, .5) 0 2px 5px 0;
+  box-sizing: border-box;
+  color: #0f1111;
+  cursor: pointer;
+  font-family: "Amazon Ember",sans-serif;
+  line-height: 29px;
+  padding: 0 10px 0 11px;
+  position: relative;
+  text-align: center;
+  width: 200px;
+  margin-left: 30px;
+}
+
+.name{
+    color: white;
+}
+
+/* Контейнер для карточек */
+.image-row {
+  display: grid;              /* Используем grid вместо flex */
+  grid-template-columns: 1fr; /* Один столбец, чтобы элементы шли в колонку */
+  gap: 20px;                  /* Расстояние между карточками */
+  padding: 20px;              /* Внутренние отступы */
+  width: 100%;                /* Полная ширина для адаптивности */
+  box-sizing: border-box;     /* Учитываем отступы и границы */
+}
+
+/* Каждая карточка будет иметь свой стиль, который вы уже задали */
+.box {
+  width: 90%;                 /* Ширина карточки на 90% контейнера */
+  max-width: 300px;           /* Максимальная ширина карточки */
+  padding: 15px;              /* Внутренние отступы */
+  background-color: #2c3e50;  /* Фон карточки */
+  border-radius: 20px;        /* Скругленные углы */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень */
+
+    align-items: center;        /* Центрируем содержимое внутри карточки */
+}
+
+
+
+
+
+
+.name {
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px; /* Отступ от кнопки */
+}
+
+#mac{
+  margin-top: -25px;
+}
+
+
+.line{
+ display: flex;
+ justify-content: space-around;
+}
+
+.line2{
+  display: flex;
+  justify-content: space-around;
+ }
+ 
+ .line3{
+  display: flex;
+  justify-content: space-around;
+ }
+ 
+
+ .line4{
+  display: flex;
+  justify-content: space-around;
+ }
+ 
+ .line5{
+  display: flex;
+  justify-content: space-around;
+ }
+ 
+ .line6{
+  display: flex;
+  justify-content: space-around;
+ }
+ 
+ .line7{
+  display: flex;
+  justify-content: space-around;
+ }
+ 
+
+
+.imgModala{
+  height: 150px;
+
+}
+
+
+#btnai{
+  margin-top: -0px;
+
+}
+
+
+.imgModalaa{
+  transform: rotateX('90deg');
+  height: 200px;
+  margin-left: 0px;
+  margin-top: 60px;
+}
+
+.imgm{
+  transform: rotateX('90deg');
+  height: 250px;
+  margin-left: 15px;
+  margin-top: 50px;
+}
+
+/* Стили для модального оверлея (фон) */
+.modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7); /* полупрозрачный черный фон */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000; /* поверх всего контента */
+  }
+  
+  /* Стили для модального окна */
+  .modal-content {
+    background-color: #2c3e50; /* темный фон для окна */
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: 400px; /* ширина модального окна */
+    height: 400px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    position: relative;
+  }
+  
+  /* Стили для текста внутри модального окна */
+  .modal-content h2 {
+    margin-bottom: 20px;
+    font-size: 1.5em;
+  }
+
+
+  
+  /* Стили для кнопок */
+  .button1 {
+    width: 100%;
+    padding: 10px;
+    margin-top: 30px;
+    background-color: #3498db; /* синий цвет для кнопки */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: #2980b9; /* темный синий цвет при наведении */
+  }
+  
+  /* Остановка распространения клика для контента */
+  .modal-content {
+    pointer-events: auto; /* чтобы клик внутри модального окна не закрывал его */
+  }
+  
+  .imgModal{
+    height: 150px;
+    transform: rotate(90deg);
+    margin-top: 20px;
+  }
+
+.box{
+    width: 250px;
+    height: 400px;
+    background-color: #2c3e50;
+    z-index: 100;
+}
+
+#adi{
+    margin-top: 50px;
+}
+
+.name{
+    margin-left: 35px;
+}
+
+/* Адаптация для мобильных устройств (до 768px) */
+@media (max-width: 768px) {
+  .img {
+    height: 150px; /* Уменьшаем высоту для мобильных экранов */
+    margin-top: 30px;
+  }
+
+  .button {
+    width: 100%; /* Кнопка занимает всю ширину контейнера */
+    font-size: 14px; /* Уменьшаем текст */
+    margin-left: 0; /* Центрируем кнопки */
+  }
+
+
+  .name {
+    font-size: 14px; /* Уменьшаем размер текста */
+    margin-left: 0; /* Центрируем текст */
+    text-align: center;
+  }
+
+  .modal-content {
+    width: 90%; /* Модальное окно занимает почти всю ширину */
+    height: auto; /* Высота подстраивается автоматически */
+    padding: 15px; /* Уменьшаем внутренние отступы */
+  }
+
+  .imgModala,
+  .imgModalaa,
+  .imgm {
+    height: 200px; /* Уменьшаем высоту изображений */
+    margin-top: 20px;
+  }
+
+  #adi {
+    margin-top: 20px;
+  }
+
+#ip{
+  margin-top: -20px;
+}
+
+  .line,
+  .line2,
+  .line3,
+  .line4,
+  .line5,
+  .line6,
+  .line7 {
+    gap: 15px; 
+
+  }
+}
+
+/* Адаптация для очень маленьких экранов (до 480px) */
+@media (max-width: 480px) {
+  .img {
+    height: 150px;
+    margin-top: 70px;
+  }
+
+  #adi{
+    margin-top: 70px;
+  }
+#alex{
+  height: 240px;
+}
+
+  #o{
+    height: 180px;
+    margin-top: 70px;
+  }
+
+
+  .button {
+    font-size: 12px;
+    padding: 5px;
+  }
+
+  .box {
+    padding: 5px;
+  }
+
+  .name {
+    font-size: 12px;
+  }
+
+  .modal-content {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .imgModala,
+  .imgModalaa,
+  .imgm {
+    height: 80px;
+  }
+}
+

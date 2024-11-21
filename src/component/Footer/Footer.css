@@ -1,0 +1,31 @@
+#h{
+    margin-left: 22.5%;
+}
+.sov4 {
+    transform: rotate(90deg);
+    margin-left: 13.5%;
+    margin-top: -100px;
+}
+
+
+
+.sov3 {
+
+    margin-left: 13.5%;
+    margin-top: 100px;
+}
+
+
+.sov1 {
+
+    margin-left: 13.5%;
+    margin-top: 100px;
+}
+
+
+@media (max-width: 767px) {
+    #h{
+        width: 700px;
+        margin-left: 250px;
+    }   
+}
